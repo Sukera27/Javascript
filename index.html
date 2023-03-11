@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio Rafael">
+    <meta name="keywords"
+        content="portfolio, home, blog, scripts, photo, photography, services, about, about me, contact">
+    <meta name="language" content="EN">
+    <meta name="author" content="rafael.mancina@a.vedrunasevillasj.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Saturday, March 11th, 2023, 00:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300; URL=index.html">
+    <link rel="stylesheet" href="css/Styles.css">
+    <script src="js/js.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="cabecera" class="cabecera">
+        <form >
+            <select name="" id="colores" onchange="cambiotema()">
+                <option value="">Basico</option>
+                <option value="#ADD8E6">Azul claro</option>
+                <option value="#90EE90">Verde claro</option>
+                <option value="#FFC0CB">Rosa claro</option>
+            </select>
+        </form>
+            
+        
+        <div class="logo">
+            <img src="img/logoPortfolio.png" alt="">
+        </div>
+        <div id="menu">
+           
+                <div class="boton"><a href="#">Descripcion</a></div>
+                <div class="boton"><a href="#descripcion">Sobre mi</a></div>
+                <div class="boton"><a href="#aboutme">Portfolio</a></div>
+                <div class="boton"><a href="#contacto">Contacto</a></div>
+                
+            
+            
+        </div>
+    </div>
+    <div id="descripcion" class="Description">
+        <div class="contenedor1">
+            <div class="foto"><img src="img/foto mia.jpg" alt=""></div>
+            <div>
+                <div class="Presentacion">
+                    <p>Hola, soy Rafael Mancina Castro graduado en historia en la Universidad de Sevilla.Como dato interesante llevo estudiando guitarra flamenca durante una larga parte de mi vida, siempre de manera
+                        autodidacta. Esto me llevo a impartir clases particulares a alumnos de diversos niveles y edades.Actualmente estoy cursando el grado superior de Desarollo de Aplicaciones Multiplaforma en la Escuela Profesiona Vedruna.</p>
+                </div>
+                <div class="redes">
+                    <p>Aqui mis redes que podeis visitar:</p>
+                    <ul>
+                    <li><a href="https://www.instagram.com/?next=%2F"><img src="img/Instagram.png" alt=""></a></li>
+                    <li><a href="https://github.com/Sukera27"><img src="img/github.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+       
+        
+    </div>
+    <div id="aboutme" class="Aboutme">
+        <div class="carta">
+            <h2>Titulación</h2>
+            <ul>
+                <li>Graduado en Historia ✔️</li>
+                <li>Master Patrimonio Artistico Andaluz✔️</li>
+                <li>Grado Superior Desarollo Aplicaciones Multiplaforma🚧</li>
+                
+            </ul>
+        </div>
+        <div class="carta">
+            <h2>Adicional</h2>
+            <ul>
+                <li>Nivel de Ingles: B2 Trinity✔️</li>
+                <li>Profesor Guitarra Flamenca✔️</li>
+                <li>Nivel de Frances:B1🚧</li>
+            </ul>
+        </div>
+    </div>
+    <div class="Portfolio" class="container">
+        <h2>Portfolio</h2>
+        <form class="opcion">
+            <select name="modulo" id="modulo" class="form-control">
+                <option value="all">All</option>
+                <option value="java">Java</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </select>
+        </form>
+        
+        <div  class="container " >
+           
+            <div class="card" data-categoria="java" >
+                <div class="proyecto" >
+                    <img src="img/math training.png" alt="">
+                    
+                </div>
+                <span class="java mx-auto">Java</span>
+                
+               
+
+            </div>
+            <div class="card" data-categoria="java" >
+                <div class="proyecto" >
+                    <img src="img/Corre Timmy.png" alt="">
+                    
+                </div>
+                <span class="java mx-auto">Java</span>
+                
+               
+
+            </div>
+            <div class="card" data-categoria="html css javascript">
+                <div class="proyecto">
+                    <img src="img/MAP.png" alt="" >
+                    
+                </div>
+                <span class="html mx-auto">HTML</span>
+                    <span class="css mx-auto">CSS</span>
+                    <span class="javascript mx-auto">Javascript</span>
+            </div>
+            
+        </div>
+    </div>
+    <div id="contacto" class="Contacto">
+        <h2>Contacto</h2>
+        <div class="formulario">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="descripcion">Asunto:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

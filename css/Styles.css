@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+.cabecera{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+     width: 100%;
+     color: white;
+     background-color: #2077d8;
+     background: linear-gradient(45deg, #0073ff,#ffacac);
+     animation: gradient 5s ease infinite;
+     background-size: 200% 200%;
+     background-repeat: no-repeat;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+.logo{
+    width: 100%;
+}
+.logo img{
+    width: 50%;
+    
+}
+
+#menu  {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.boton{
+    width: 25%;
+    height: 70%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+}
+.boton:hover{
+    background: #4e4e4e;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 30%;
+    font-size: 20px;
+
+}
+
+
+#menu a{
+    
+    text-decoration: none;
+    color: white;
+}
+.foto img{
+    width: 130px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.foto:hover{
+    animation: girar 1s;
+}
+
+.contenedor1{
+    background-color: white;
+}
+.redes img{
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.redes ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.Aboutme{
+    text-align: center;
+    margin-top: 1px;
+    
+}
+
+.Aboutme ul{
+    list-style-type: none;
+}
+.carta{
+    border: solid 2px  blue;
+
+}
+.carta:hover{
+    animation: pulse5122 1.5s infinite;
+}
+@keyframes pulse5122 {
+    0% {
+     box-shadow: 0 0 0 0 #97a7ba;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgba(68, 153, 218, 0);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgba(68, 153, 218, 0);
+    }
+}
+.Portfolio{
+  text-align: center;
+  margin-top: 1px;
+  background-color: #2077d8;
+  color: white;
+  background: linear-gradient(45deg, #0073ff,#ffacac);
+     animation: gradient 5s ease infinite;
+     background-size: 200% 200%;
+     background-repeat: no-repeat;
+}
+form:has(select > option[value="java"]:checked) + .container .java,
+form:has(select > option[value="html"]:checked) + .container .html,
+form:has(select > option[value="css"]:checked) + .container .css,
+form:has(select > option[value="javascript"]:checked) + .container .javascript{
+    color: red;
+    animation: escala 2s;
+}
+
+@keyframes escala {
+    50% {
+        transform: scale(2);
+    }
+}
+.opcion{
+    margin-bottom: 3px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img{
+    width: 130px;
+  
+}
+
+.Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #2077d8;
+    color: white;
+    background: linear-gradient(45deg, #0073ff,#ffacac);
+     animation: gradient 5s ease infinite;
+     background-size: 200% 200%;
+     background-repeat: no-repeat;
+}
+.formulario {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #2077d8;
+    border-radius: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .invalido {
+    border-color: #ff0000;
+  }
+
+  .valido {
+    border-color: #00ff00;
+  }
+
+
+@media (min-width: 576px) {
+    .cabecera{
+        position: sticky;
+        top: 0;
+         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+         width: 100%;
+        
+    
+    }
+    .logo{
+        width: 50%;
+    }
+    .contenedor1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        
+        
+    }
+
+    .foto img{
+        width: 230px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 50%;
+    }
+    .Aboutme{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+
+    }
+    
+    .card img{
+        width: 180px;
+    }
+    
+    
+   
+    
+   
+}
+
+@media (min-width: 768px) {
+    
+
+}
+@media (min-width: 992px) {
+   
+
+}
+@media (min-width: 1200px) {
+   
+
+}
+@media (min-width: 1400px) {
+    
+
+}
